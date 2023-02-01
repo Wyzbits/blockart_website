@@ -1,0 +1,44 @@
+
+.page-container {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#navigation-container{
+    overflow: hidden;
+}
+.open {
+    height: auto;
+}
+.closed{
+    height: 40px;
+
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+}
+
+
+.navigation-desk {
+    display: none;
+    
+}
+
+li{
+    list-style-type: none;
+}
+
+#mode:hover {
+    cursor: pointer;
+}
+
+
