@@ -1,4 +1,10 @@
 
+/*
+#################
+HEADER
+#################
+*/
+
 .page-container {
     height: 90vh;
     display: flex;
@@ -9,24 +15,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+
 }
 
 #navigation-container{
     overflow: hidden;
 }
-.open {
-    height: auto;
-}
-.closed{
-    height: 40px;
-
-}
-
-.logo {
-    width: 30px;
-    height: 30px;
-}
-
 
 .navigation-desk {
     display: none;
@@ -42,3 +36,131 @@ li{
 }
 
 
+
+.open {
+    height: auto;
+}
+.closed{
+    height: 40px;
+
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+}
+
+/*
+#################
+IMAGES HOME
+#################
+*/
+
+
+.image-container {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    float: left;
+    padding: 0px;
+    padding-bottom: 100px;
+
+   
+}
+.image-slider   {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; 
+
+}
+
+.image-wrapper {
+    width: 100%;
+    height: auto;
+    min-width: fit-content
+}
+
+.slide-image {
+    width: 100%; ;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/*
+#################
+ABOUT ME
+#################
+*/
+
+
+
+
+
+.divider {
+    display: none;
+
+}
+
+.aboutme-section {
+    display: flex; 
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+
+.aboutme-container{
+    width: 95vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: flex-start !important;
+    padding: 0px;
+}
+
+.aboutme-container:nth-of-type(even){
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: right;
+    align-self: flex-end !important;
+    align-items: flex-end !important;
+    
+}
+
+.aboutme-text-1{
+    width:70vw;
+    height: auto;
+    padding: 25px;
+    padding-top: 0px;
+    position: relative;
+    text-align: left;
+}
+
+.aboutme-text-2{
+    width:70vw;
+    height: auto;
+    padding: 20px;
+    padding-top: 0px;
+    position: relative;
+    text-align: right;
+
+}
+
+
+.aboutme-image{
+    width: 80vw;
+    height: auto;
+    position: relative;
+    padding: 25px;
+    margin-top: 35px;
+
+}
+
+.aboutme-image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}

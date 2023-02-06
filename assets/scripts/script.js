@@ -1,38 +1,43 @@
-document.getElementById('nav-button').onclick = function () {
-    var nav = document.getElementById('navigation-container');
-    if (nav.classList.contains('open')) {
-        nav.classList.toggle('open');
-    } else {
-        nav.classList.toggle('closed');
-    }
-}
+document.getElementById("nav-button").onclick = function () {
+  var nav = document.getElementById("navigation-container");
+  if (nav.classList.contains("open")) {
+    nav.classList.toggle("open");
+  } else {
+    nav.classList.toggle("closed");
+  }
+};
 
+document.getElementById("mode").onclick = function () {
+  var devider = document.getElementById("devider");
+  var body = document.getElementById("body");
+  var mode = document.getElementById("mode");
 
-
-document.getElementById('mode').onclick = function () {
-    var body = document.getElementById('body');
-    var mode = document.getElementById('mode');
-    if (body.classList.contains('dark-mode') && mode.classList.contains('bi-sun')) {
-        body.classList.remove('dark-mode');
-        body.classList.add('light-mode');
-        mode.classList.remove('bi-sun');
-        mode.classList.add('bi-moon');
-    } else {
-        body.classList.remove('light-mode');
-        body.classList.add('dark-mode');
-        mode.classList.remove('bi-moon');
-        mode.classList.add('bi-sun');
-    }
-}
-
-
+  if (
+    body.classList.contains("dark-mode") &&
+    mode.classList.contains("bi-sun")
+  ) {
+    body.classList.remove("dark-mode");
+    body.classList.add("light-mode");
+    devider.classList.remove("light-mode");
+    devider.classList.add("dark-mode");
+    mode.classList.remove("bi-sun");
+    mode.classList.add("bi-moon");
+  } else {
+    body.classList.remove("light-mode");
+    body.classList.add("dark-mode");
+    devider.classList.remove("dark-mode");
+    devider.classList.add("light-mode");
+    mode.classList.remove("bi-moon");
+    mode.classList.add("bi-sun");
+  }
+};
 
 var movedBY = 1;
 var x = 0;
 var elementWidth = 0;
-var sliderImages = document.getElementsByClassName("slide-image")
+var sliderImages = document.getElementsByClassName("slide-image");
 for (var i = 0; i < sliderImages.length; i++) {
-    elementWidth += sliderImages[i].offsetWidth;
+  elementWidth += sliderImages[i].offsetWidth;
 }
 
 /* function myfunc() {
@@ -59,5 +64,3 @@ document.getElementById("image-container").addEventListener("mouseenter", (e) =>
 document.getElementById("image-container").addEventListener("mouseleave", (e) => {
     clearInterval(myInterval);
 }); */
-
-
