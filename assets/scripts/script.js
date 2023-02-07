@@ -7,7 +7,8 @@ document.getElementById("nav-button").onclick = function () {
   }
 };
 
-document.getElementById("mode").addEventListener("click", function () {
+document.getElementById("mode").addEventListener("tap", function () {
+  alert("clicked");
   var devider = document.getElementById("divider");
   var body = document.getElementById("body");
   var mode = document.getElementById("mode");
