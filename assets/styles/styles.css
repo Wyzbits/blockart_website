@@ -95,10 +95,6 @@ ABOUT ME
 #################
 */
 
-
-
-
-
 .divider {
     display: none;
 
@@ -116,7 +112,7 @@ ABOUT ME
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-self: flex-start !important;
+    align-self: flex-start;
     padding: 0px;
 }
 
@@ -124,8 +120,8 @@ ABOUT ME
     display: flex;
     flex-direction: column-reverse;
     text-align: right;
-    align-self: flex-end !important;
-    align-items: flex-end !important;
+    align-self: flex-end;
+    align-items: flex-end; 
     
 }
 
@@ -164,3 +160,24 @@ ABOUT ME
     object-fit: cover;
     border-radius: 5px;
 }
+
+
+/*
+#################
+GALLERY
+#################
+*/
+
+.gallary-section {
+    width: 100vw;
+    height: 60vh;
+    padding-bottom: 100px;
+   
+}
+
+.gallary-image {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+

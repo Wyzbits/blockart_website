@@ -7,11 +7,11 @@ document.getElementById("nav-button").onclick = function () {
   }
 };
 
-document.getElementById("mode").onclick = function () {
-  var devider = document.getElementById("devider");
+document.getElementById("mode").addEventListener("click", function () {
+  var devider = document.getElementById("divider");
   var body = document.getElementById("body");
   var mode = document.getElementById("mode");
-
+  console.log(body.classList);
   if (
     body.classList.contains("dark-mode") &&
     mode.classList.contains("bi-sun")
@@ -30,7 +30,7 @@ document.getElementById("mode").onclick = function () {
     mode.classList.remove("bi-moon");
     mode.classList.add("bi-sun");
   }
-};
+});
 
 var movedBY = 1;
 var x = 0;
